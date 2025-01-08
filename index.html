@@ -3,94 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificate Verification</title>
+    <meta name="description" content="Ronak Academy - شهادة التحقق">
+    <title>شهادة التحقق | Ronak Academy</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            direction: rtl;
+            text-align: right;
             margin: 0;
             padding: 0;
-            direction: rtl;
         }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 50px;
-        }
-        h1 {
-            text-align: center;
-            color: #1279BE;
-            font-size: 28px;
-        }
-        .certificate-info {
+
+        header {
             background-color: #1279BE;
             color: white;
             padding: 10px;
             text-align: center;
-            margin-bottom: 20px;
-            font-size: 20px;
         }
+
+        h1, h2 {
+            margin: 10px 0;
+        }
+
+        .content {
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .table-container {
+            margin-top: 20px;
+            overflow-x: auto;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 12px;
             text-align: center;
-            font-size: 16px;
+            margin-bottom: 20px;
         }
-        th {
+
+        table th, table td {
+            padding: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        table th {
             background-color: #1279BE;
             color: white;
         }
-        td {
-            background-color: #f9f9f9;
+
+        .mark {
+            background-color: rgba(0, 0, 0, 0);
+            color: #1279BE;
         }
-        footer {
+
+        .footer {
+            background-color: #1279BE;
+            color: white;
             text-align: center;
-            margin-top: 40px;
-            font-size: 14px;
-            color: #555;
+            padding: 10px;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>أكاديمية رونك</h1>
+        <p>التدريب والشهادات في مجالات السلامة والتخصصات الصناعية</p>
+    </header>
 
-<div class="container">
-    <h1>Certificate Verification</h1>
-
-    <div class="certificate-info">
-        <p>Ronak Academy</p>
-        <p>في أكاديمية رونق للتدريب، نلتزم بتقديم خدمات التدريب والشهادات عالية الجودة التي تواكب متطلبات الصناعات الحديثة. نحن المزود الرائد في العراق في مجال تدريب المناطق الخطرة.</p>
+    <div class="content">
+        <h2><span class="mark">معلومات الشهادة</span></h2>
+        <table>
+            <tr>
+                <th>رقم الشهادة</th>
+                <th>اسم الحاصل عليها</th>
+                <th>التاريخ</th>
+                <th>الحالة</th>
+            </tr>
+            <tr>
+                <td>RTA-FA-2024-MGL410</td>
+                <td>مصطفى سجاد عبد الحسن</td>
+                <td>01-01-2024</td>
+                <td>صالح</td>
+            </tr>
+        </table>
     </div>
 
-    <table>
-        <tr>
-            <th>رقم الشهادة</th>
-            <th>اسم الحاصل عليها</th>
-            <th>التاريخ</th>
-            <th>الحالة</th>
-        </tr>
-        <tr>
-            <td>RTA-FA-2024-MGL410</td>
-            <td>مصطفى سجاد عبد الحسن</td>
-            <td>08-01-2024</td>
-            <td>صالح</td>
-        </tr>
-    </table>
-
-    <footer>
-        <p>جميع الحقوق محفوظة &copy; 2024 أكاديمية رونق</p>
+    <footer class="footer">
+        <p>© 2024 أكاديمية رونك - جميع الحقوق محفوظة</p>
     </footer>
-</div>
-
 </body>
 </html>
