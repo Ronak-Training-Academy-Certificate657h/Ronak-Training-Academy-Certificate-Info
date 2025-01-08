@@ -9,18 +9,21 @@
 <body>
 
     <div class="container">
-        <div class="logo">
-            <img src="https://example.com/logo.png" alt="شعار الأكاديمية" />
+        <div class="header">
+            <h1>التحقق من الشهادة</h1>
         </div>
-        <h1>التحقق من الشهادة</h1>
-        <p>يرجى إدخال رقم الشهادة للتحقق:</p>
-        <form class="verification-form">
-            <input type="text" id="certificateNumber" placeholder="أدخل رقم الشهادة" />
-            <button type="submit">تحقق</button>
-        </form>
+        
         <div class="certificate-info">
-            <p>رقم الشهادة: <strong>RTA-FA-2024-MGL410</strong></p>
-            <p>التحقق: <span class="status">قيد التحقق...</span></p>
+            <p>لتأكيد صحة الشهادة، يرجى إدخال رقم الشهادة أدناه.</p>
+            <form id="verification-form">
+                <input type="text" id="certificate-number" placeholder="أدخل رقم الشهادة" />
+                <button type="submit">تحقق</button>
+            </form>
+        </div>
+        
+        <div class="certificate-details">
+            <p><strong>رقم الشهادة:</strong> RTA-FA-2024-MGL410</p>
+            <p><strong>الحالة:</strong> <span id="status">قيد التحقق...</span></p>
         </div>
     </div>
 
