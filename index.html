@@ -3,85 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Certificate Verification | Ronak Academy">
-    <title>Certificate Verification | Ronak Academy</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            direction: rtl;
-            text-align: right;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #1279BE;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        .content {
-            margin: 20px;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-        }
-        h2 {
-            color: #1279BE;
-            font-size: 22px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: center;
-            margin-top: 20px;
-        }
-        table th, table td {
-            padding: 12px;
-            border: 1px solid #ccc;
-            font-size: 14px;
-        }
-        table th {
-            background-color: #1279BE;
-            color: white;
-        }
-        footer {
-            background-color: #1279BE;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            margin-top: 30px;
-        }
-    </style>
+    <title>التحقق من الشهادة</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>أكاديمية رونك</h1>
-        <p>التحقق من الشهادات</p>
-    </header>
 
-    <div class="content">
-        <h2>معلومات الشهادة</h2>
-        <table>
-            <tr>
-                <th>رقم الشهادة</th>
-                <th>اسم الحاصل عليها</th>
-                <th>التاريخ</th>
-                <th>الحالة</th>
-            </tr>
-            <tr>
-                <td>RTA-FA-2024-MGL410</td>
-                <td>مصطفى سجاد عبد الحسن</td>
-                <td>08-01-2024</td>
-                <td>صالح</td>
-            </tr>
-        </table>
+    <div class="container">
+        <div class="logo">
+            <img src="https://example.com/logo.png" alt="شعار الأكاديمية" />
+        </div>
+        <h1>التحقق من الشهادة</h1>
+        <p>يرجى إدخال رقم الشهادة للتحقق:</p>
+        <form class="verification-form">
+            <input type="text" id="certificateNumber" placeholder="أدخل رقم الشهادة" />
+            <button type="submit">تحقق</button>
+        </form>
+        <div class="certificate-info">
+            <p>رقم الشهادة: <strong>RTA-FA-2024-MGL410</strong></p>
+            <p>التحقق: <span class="status">قيد التحقق...</span></p>
+        </div>
     </div>
 
-    <footer>
-        <p>جميع الحقوق محفوظة © 2024 أكاديمية رونك</p>
-    </footer>
 </body>
 </html>
