@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>التحقق من الشهادة</title>
+    <title>معلومات الشهادة</title>
     <style>
-        /* styles.css */
         * {
             margin: 0;
             padding: 0;
@@ -51,36 +50,6 @@
             color: #333;
             font-size: 24px;
             margin-bottom: 10px;
-        }
-
-        .input-section p {
-            font-size: 16px;
-            color: #555;
-            margin-bottom: 20px;
-        }
-
-        input[type="text"] {
-            width: 80%;
-            padding: 10px;
-            font-size: 16px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        button {
-            width: 80%;
-            padding: 10px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #218838;
         }
 
         /* تنسيق الجدول */
@@ -131,19 +100,11 @@
         <div class="container">
             <div class="certificate-header">
                 <img src="https://a.ronak-academy.com/images/logo.png" alt="Logo" class="logo">
-                <h1>التحقق من الشهادة</h1>
-            </div>
-            
-            <div class="input-section">
-                <p>يرجى إدخال رقم الشهادة للتحقق:</p>
-                <form id="certificate-form">
-                    <input type="text" id="certificate-number" placeholder="أدخل رقم الشهادة" required>
-                    <button type="submit">تحقق</button>
-                </form>
+                <h1>معلومات الشهادة</h1>
             </div>
 
             <div class="certificate-table">
-                <h2>معلومات الشهادة</h2>
+                <h2>تفاصيل الشهادة</h2>
                 <table>
                     <thead>
                         <tr>
@@ -174,24 +135,143 @@
         </div>
     </div>
 
-    <script>
-        // script.js
-        document.getElementById("certificate-form").addEventListener("submit", function(event) {
-            event.preventDefault();
+</body>
+</html><!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معلومات الشهادة</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-            var certificateNumber = document.getElementById("certificate-number").value;
-            var statusElement = document.getElementById("status");
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-            // تحقق من صحة الرقم (مثال بسيط على التحقق)
-            if (certificateNumber === "RTA-FA-2024-MGL410") {
-                statusElement.textContent = "صالح";
-                statusElement.style.color = "green";
-            } else {
-                statusElement.textContent = "غير صالح";
-                statusElement.style.color = "red";
-            }
-        });
-    </script>
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 600px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .certificate-header {
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* تنسيق الجدول */
+        .certificate-table {
+            margin-top: 20px;
+            text-align: left;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .certificate-table h2 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        td {
+            color: #555;
+        }
+
+        #status {
+            font-weight: bold;
+            color: #ff9900;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="container">
+            <div class="certificate-header">
+                <img src="https://a.ronak-academy.com/images/logo.png" alt="Logo" class="logo">
+                <h1>معلومات الشهادة</h1>
+            </div>
+
+            <div class="certificate-table">
+                <h2>تفاصيل الشهادة</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>المعلومة</th>
+                            <th>القيمة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>رقم الشهادة</td>
+                            <td>RTA-FA-2024-MGL410</td>
+                        </tr>
+                        <tr>
+                            <td>الاسم</td>
+                            <td>محمد أحمد</td>
+                        </tr>
+                        <tr>
+                            <td>التاريخ</td>
+                            <td>01/01/2024</td>
+                        </tr>
+                        <tr>
+                            <td>الحالة</td>
+                            <td><span id="status">قيد التحقق...</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
