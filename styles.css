@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f7fc;
+    background-color: #f5f5f5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,47 +16,46 @@ body {
 
 .container {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     text-align: center;
 }
 
-.logo img {
-    width: 100px;
+.header {
     margin-bottom: 20px;
 }
 
 h1 {
-    color: #333;
     font-size: 24px;
-    margin-bottom: 10px;
+    color: #333;
 }
 
-p {
+.certificate-info {
+    margin-bottom: 20px;
+}
+
+.certificate-info p {
+    font-size: 16px;
     color: #555;
-    font-size: 16px;
+    margin-bottom: 20px;
 }
 
-.verification-form {
-    margin: 20px 0;
-}
-
-.verification-form input {
-    width: 100%;
+input[type="text"] {
+    width: 80%;
     padding: 10px;
-    font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
 }
 
-.verification-form button {
-    width: 100%;
+button {
+    width: 80%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -64,18 +63,24 @@ p {
     cursor: pointer;
 }
 
-.verification-form button:hover {
-    background-color: #45a049;
+button:hover {
+    background-color: #0056b3;
 }
 
-.certificate-info {
+.certificate-details {
     margin-top: 20px;
     background-color: #f9f9f9;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
 }
 
-.status {
+.certificate-details p {
+    font-size: 16px;
+    color: #555;
+}
+
+#status {
     font-weight: bold;
     color: #ff9900;
 }
