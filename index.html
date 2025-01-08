@@ -8,24 +8,31 @@
 </head>
 <body>
 
-    <div class="container">
-        <div class="header">
-            <h1>التحقق من الشهادة</h1>
-        </div>
-        
-        <div class="certificate-info">
-            <p>لتأكيد صحة الشهادة، يرجى إدخال رقم الشهادة أدناه.</p>
-            <form id="verification-form">
-                <input type="text" id="certificate-number" placeholder="أدخل رقم الشهادة" />
-                <button type="submit">تحقق</button>
-            </form>
-        </div>
-        
-        <div class="certificate-details">
-            <p><strong>رقم الشهادة:</strong> RTA-FA-2024-MGL410</p>
-            <p><strong>الحالة:</strong> <span id="status">قيد التحقق...</span></p>
+    <div class="main-container">
+        <div class="container">
+            <div class="certificate-header">
+                <img src="https://a.ronak-academy.com/images/logo.png" alt="Logo" class="logo">
+                <h1>التحقق من الشهادة</h1>
+            </div>
+            
+            <div class="input-section">
+                <p>يرجى إدخال رقم الشهادة للتحقق:</p>
+                <form id="certificate-form">
+                    <input type="text" id="certificate-number" placeholder="أدخل رقم الشهادة" required>
+                    <button type="submit">تحقق</button>
+                </form>
+            </div>
+            
+            <div class="certificate-info">
+                <div class="info">
+                    <p><strong>رقم الشهادة:</strong> RTA-FA-2024-MGL410</p>
+                    <p><strong>الحالة:</strong> <span id="status">قيد التحقق...</span></p>
+                </div>
+            </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
