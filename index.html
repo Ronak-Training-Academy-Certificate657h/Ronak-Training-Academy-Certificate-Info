@@ -107,6 +107,21 @@
             background-color: #4682B4; /* Darker blue */
         }
 
+        /* Alternating row colors */
+        tr:nth-child(odd) {
+            background-color: #f1f1f1; /* Light Gray */
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffffff; /* White */
+        }
+
+        /* Note row styles */
+        .note-row {
+            background-color: #f1f1f1; /* Light Gray */
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
@@ -123,7 +138,11 @@
         <div class="certificate-table">
             <h2>Certificate Info</h2> <!-- Changed to Light Blue -->
             <table>
+                <!-- Note Row -->
                 <thead>
+                    <tr class="note-row">
+                        <th colspan="2">Note</th>
+                    </tr>
                     <tr>
                         <th>Information</th>
                         <th>Value</th>
