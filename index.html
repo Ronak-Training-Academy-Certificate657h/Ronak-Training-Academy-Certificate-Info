@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificate Details</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;580;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -42,7 +42,14 @@
             font-size: 36px; /* Increased size by 1.5 times */
             font-weight: 400; /* Doubled thickness (default 200 -> now 400) */
             text-align: left; /* Align to the left */
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+        }
+
+        .divider {
+            border: 0;
+            height: 3px;
+            background-color: #1E90FF; /* Light Blue */
+            margin: 10px 0 20px 0; /* Spacing around the line */
         }
 
         .certificate-table {
@@ -129,6 +136,9 @@
     <div class="container">
         <!-- Modified Ronak Academy name -->
         <div class="academy-name">Ronak Academy</div>
+        
+        <!-- Line divider -->
+        <hr class="divider">
 
         <!-- Added introduction text -->
         <p class="intro-text">
